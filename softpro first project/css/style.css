@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: auto;
+}
+
+#navbar ul{
+    display: flex;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    
+}
+.container{
+    display: flex;
+    border:solid 1px black;
+}
+.container> :nth-child(2){
+    margin-right: auto;
+}
+a{
+    padding: 10px;
+}
+
+#navbar ul li a{
+    color:black;
+    display: block;
+    padding: 15px 15px 15px 15px;
+    border-radius: 60px;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: darkolivegreen;
+}
+
+#navbar::before{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
+#navbar ul li a:hover{
+    color:white;
+    background-color:black;
+}
+/*home section*/
+
+
+
+#home{
+    display: flex;
+    flex-direction: coloumn;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+
+  }
+  #home::before{
+    content: "";
+    position: absolute;
+    background: url("../assets/living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    position: relative;
+  }
+  .h-primary{
+    font-size: 2.4rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin:auto;
+  }
+  #homediv{
+    position: absolute;
+    top: 50%;
+    right:12%;
+    transform: translateY(-50%);
+    margin:2px;
+    padding: 18px;
+    /* border: 2px solid black; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+ }
+ #homediv h2{
+    color: white;
+    padding: 2px;
+ }
+ #homediv p{
+    color: white;
+    padding: 4px;
+ }
+ #btn{
+    padding: 6px;
+    border: 2px solid white;
+    color: black;
+    background-color: darkolivegreen;
+    margin: 17px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* services section */
+
+#services{
+        margin: 50px;
+        padding: 10px 40px 10px 40px; 
+        display: flex;
+        background-color: white;
+        color: black;
+    }
+
+#services .box img{
+    border: 2px solid white;
+    padding: 5px;
+    height: 270px;
+    display: block;
+    margin:auto;
+    border-radius: 20px;
+
+}
+#services .box{
+    border: 2px solid white;
+    
+    
+}
+#services .box p{
+    font-size: 15px;
+
+}
+
+
+
+
+/* utitlity class */
+.center{
+    text-align: center;
+}
+#h-secondary center{
+    font-size: 1.5rem;
+    padding:12px ;
+}
+ 
+
+
+
+
+
